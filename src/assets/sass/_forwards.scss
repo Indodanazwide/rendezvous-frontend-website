@@ -1,0 +1,101 @@
+// Color settings
+$color-primary: #8B4B8B;
+$color-primary-hover: #8b4b8bc5;
+$color-secondary: #8CB369;
+$color-white: #FFFFFF;
+
+
+$color-bace-primary: #1D1F33;
+$color-base-secondary: #333;
+
+$white: #ffffff;
+$off-white: #f8f8f8;
+$light-gray: #f0f0f0;
+$dark-gray: #333333;
+
+$primary-color: #f2f2f2;
+
+$ebony: #0F152C;
+$mirage: #1D1F33;
+$judge-gray: #594136;
+
+$roti: #B2A43B;
+$martini: #B5A4A9;
+$trendy-pink: #9A669B; 
+
+$mantis: #7DB95B;
+$hippie-green: #638849;
+
+// Font settings
+$font-family: Poppins, sans-serif;
+$font-size-base: 1rem;
+$font-size-header: 4rem;
+$font-size-subheader: 1.5rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    background-color: $color-white;
+    color: $martini;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    color: $color-bace-primary;
+}
+
+h1 {
+    font-size: $font-size-header;
+}
+
+p {
+    font-size: $font-size-base;
+}
+
+a {
+    text-decoration: none;
+    color: $color-base-secondary;
+
+    &:hover {
+        color: $color-bace-primary;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+mark {
+    background-color: rgba($color-secondary, 0.15);
+    color: darken($color-secondary, 20%);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+button {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: $font-size-base;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-primary-hover;
+    }
+}
