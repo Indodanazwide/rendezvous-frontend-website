@@ -26,6 +26,30 @@ $trendy-pink: #9A669B;
 $mantis: #7DB95B;
 $hippie-green: #638849;
 
+$primary-color: #1e40af;
+$text-primary: #111827;
+$text-secondary: #4b5563;
+$bg-light: #f9fafb;
+$white: #ffffff;
+$spacing-base: 1rem;
+$border-radius: 0.5rem;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: $spacing-base * 1.5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 // Font settings
 $font-family: Poppins, sans-serif;
 $font-size-base: 1rem;
